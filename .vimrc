@@ -36,12 +36,14 @@ set ignorecase
 set smartcase
 
 set nospell
-set nobackup
-set noswapfile
-set noundofile
+set backup
+set swapfile
+set undofile
 set backupdir=~/.vim/.backup//
 set directory=~/.vim/.swp//
 set undodir=~/.vim/.undo//
+set viminfo='100,<100,/50,:100,h,f1,r/tmp,s10
+
 set autochdir
 set noerrorbells
 set visualbell
