@@ -53,3 +53,9 @@ set list
 set listchars=tab:<->,trail:-,extends:»,precedes:«
 set wildmenu
 set wildmode=longest:list,full
+
+nnoremap yy yy:call system("wl-copy", @")<cr>
+xnoremap y y:call system("wl-copy", @")<cr>
+xnoremap Y Y:call system("wl-copy", @")<cr>
+nnoremap p :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>p
+nnoremap P :let @"=substitute(system("wl-paste --no-newline"), '<C-v><C-m>', '', 'g')<cr>P
