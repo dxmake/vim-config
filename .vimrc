@@ -39,9 +39,9 @@ set nospell
 set backup
 set swapfile
 set undofile
-set backupdir=~/.vim/.backup//
-set directory=~/.vim/.swp//
-set undodir=~/.vim/.undo//
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
+set undodir=~/.vim/undo//
 set viminfo='100,<100,/50,:100,h,f1,r/tmp,s10
 
 set autochdir
