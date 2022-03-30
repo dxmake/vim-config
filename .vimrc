@@ -54,6 +54,11 @@ set listchars=tab:<->,trail:-,extends:»,precedes:«
 set wildmenu
 set wildmode=longest:list,full
 
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 " nnoremap yy yy:call system("wl-copy", @")<cr>
 " xnoremap y y:call system("wl-copy", @")<cr>
 " xnoremap Y Y:call system("wl-copy", @")<cr>
